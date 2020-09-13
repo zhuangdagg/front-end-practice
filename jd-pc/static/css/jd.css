@@ -1,0 +1,494 @@
+html {
+  font-size: 37.5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: #e6e6e6;
+}
+
+a {
+  text-decoration: none;
+  color: #999999;
+}
+
+div.shortcut {
+  font-size: 0.32rem;
+  height: 30px;
+  min-width: 990px;
+  margin: 0;
+  padding: 0;
+  background-color: #e3e4e5;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.shortcut i {
+  font-size: 0.02rem;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.shortcut a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+div.shortcut a:hover {
+  color: #e1251b;
+}
+div.shortcut div.position {
+  margin-right: 6rem;
+  position: relative;
+}
+div.shortcut div.position:hover {
+  background-color: #ffffff;
+}
+div.shortcut div.position:hover > a {
+  color: #e1251b;
+}
+div.shortcut div.position:hover div.dropdown {
+  display: flex;
+}
+div.shortcut div.dropdown {
+  position: absolute;
+  z-index: 100;
+  margin: 0px;
+  padding: 10px;
+  width: 250px;
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+}
+div.shortcut div.dropdown div.area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-bottom: 1px dotted #eeeeee;
+}
+div.shortcut div.dropdown div.area a {
+  display: block;
+  width: 50px;
+  height: 25px;
+}
+div.shortcut div.dropdown div.area a:hover {
+  color: #e1251b;
+}
+div.shortcut div.dropdown div.area-mini p, div.shortcut div.dropdown div.area-mini-other p {
+  color: #999999;
+}
+div.shortcut div.dropdown div.area-mini div.area-mini-items, div.shortcut div.dropdown div.area-mini-other div.area-mini-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 1px dotted #eeeeee;
+}
+div.shortcut div.dropdown div.area-mini-other {
+  border: 0;
+}
+div.shortcut div.dropdown div.area-mini-other div.area-mini-items {
+  justify-content: flex-start;
+}
+div.shortcut div.dropdown div.area-mini-other div.area-mini-items a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 120px;
+  margin-left: 5px;
+  pading: 0px;
+}
+
+div.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+div.navigation div.login {
+  margin-right: 20px;
+}
+div.navigation div.login ~ div {
+  padding: 0px 10px;
+}
+div.navigation span {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: #ccc;
+}
+div.navigation a:hover {
+  color: #ff0000;
+}
+div.navigation div.item > a {
+  position: relative;
+}
+div.navigation div.item div.dropdown {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: absolute;
+}
+div.navigation div.item div.dropdown div.area {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+div.navigation div.item div.dropdown div.area a {
+  display: block;
+  width: 100px;
+  margin-right: 20px;
+}
+div.navigation div.item:hover a {
+  background-color: #ffffff;
+}
+div.navigation div.item:hover div.dropdown {
+  display: flex;
+}
+div.navigation div.item.purchase div.dropdown, div.navigation div.item.server div.dropdown {
+  width: 120px;
+}
+div.navigation div.item.purchase div.dropdown div.area, div.navigation div.item.server div.dropdown div.area {
+  justify-content: center;
+}
+div.navigation div.item.purchase div.dropdown div.area a, div.navigation div.item.server div.dropdown div.area a {
+  display: block;
+  margin: 0px;
+  width: 60px;
+}
+div.navigation div.item.server {
+  position: relative;
+}
+div.navigation div.item.server div.dropdown {
+  right: 10px;
+}
+div.navigation div.item.server div.dropdown div.area {
+  margin: 0;
+  padding: 0;
+}
+
+div#header {
+  min-width: 990px;
+  height: 140px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div#header div.logo {
+  display: block;
+  overflow: hidden;
+  width: 190px;
+  height: 120px;
+  background-image: url(../img/logo.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 190px 160px;
+}
+div#header div.header {
+  font-size: 0.32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+div#header div.header .first {
+  display: flex;
+  flex-direction: row;
+}
+div#header div.header .first .search {
+  width: 450px;
+}
+div#header div.header .first .search input {
+  position: relative;
+  left: 2px;
+  width: 300px;
+  height: 28px;
+  padding: 2px 44px 2px 16px;
+  border: 2px solid #e1251b;
+  border-radius: 0;
+}
+div#header div.header .first .search input:focus {
+  outline: none;
+}
+div#header div.header .first .search button {
+  position: absolute;
+  width: 60px;
+  height: 36px;
+  border-radius: 0;
+  border: 2px solid #e1251b;
+  color: #ffffff;
+  background-color: #e1251b;
+  transition: background 0.2s ease;
+}
+div#header div.header .first .search button i {
+  font-size: 0.5333rem;
+}
+div#header div.header .first .search button:focus {
+  outline: none;
+}
+div#header div.header .first .search button:hover {
+  background-color: #c81623;
+}
+div#header div.header .first .search .search-nav {
+  margin-top: 5px;
+}
+div#header div.header .first .search .search-nav a {
+  padding-right: 4px;
+}
+div#header div.header .first .search .search-nav a:hover {
+  color: #e1251b;
+}
+div#header div.header .first .shopping-cart button {
+  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, sans-serif;
+  height: 34px;
+  border-radius: 0;
+  padding: 0 10px;
+  background-color: #ffffff;
+  color: #c81623;
+  border: 1px solid #eeeeee;
+}
+div#header div.header .first .shopping-cart button i {
+  font-size: 0.5333rem;
+  padding-right: 5px;
+}
+div#header div.header .first .shopping-cart button:hover {
+  border: 1px solid #e1251b;
+}
+div#header div.header .nav {
+  margin: 25px 0 0 0;
+  font-size: 0.4rem;
+}
+div#header div.header .nav a {
+  padding-right: 15px;
+  color: black;
+}
+div#header div.header .nav a:hover {
+  color: #e1251b;
+}
+
+div#search {
+  min-width: 990px;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 2px solid #c81623;
+  margin: 0;
+  padding: 0;
+  left: 0px;
+  top: 0px;
+}
+div#search div.logo-fix {
+  display: block;
+  overflow: hidden;
+  width: 125px;
+  height: 40px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 190px 160px;
+  background-position: 0 -120px;
+}
+div#search div.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 450px;
+  position: relative;
+  margin-left: 60px;
+}
+div#search div.search input {
+  left: 2px;
+  width: 300px;
+  height: 28px;
+  border: 2px solid #e1251b;
+  border-radius: 0;
+}
+div#search div.search input:focus {
+  outline: none;
+}
+div#search div.search button.sublime {
+  position: absolute;
+  margin-left: 304px;
+  width: 60px;
+  height: 34px;
+  border-radius: 0;
+  border: 2px solid #e1251b;
+  color: #ffffff;
+  background-color: #e1251b;
+  transition: background 0.2s ease;
+}
+div#search div.search button.sublime i {
+  font-size: 0.5333rem;
+}
+div#search div.search button.sublime:focus {
+  outline: none;
+}
+div#search div.search button.sublime:hover {
+  background-color: #c81623;
+}
+div#search div.search button.cart {
+  position: absolute;
+  margin-left: 380px;
+  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, sans-serif;
+  height: 34px;
+  border-radius: 0;
+  background-color: #ffffff;
+  color: #c81623;
+  border: 1px solid #eeeeee;
+}
+div#search div.search button.cart i {
+  font-size: 0.5333rem;
+}
+div#search div.search button.cart:hover {
+  border: 1px solid #e1251b;
+}
+
+div.master-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e6e6e6;
+  margin-bottom: 30px;
+  min-width: 990px;
+}
+div.master-index div.mi-col1 {
+  min-width: 190px;
+  height: 480px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+div.master-index div.mi-col2 {
+  min-width: 590px;
+  height: 480px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+div.master-index div.mi-col3 {
+  min-width: 190px;
+  height: 480px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+div.seckill {
+  min-width: 990px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e6e6e6;
+  position: relative;
+}
+div.seckill div.sk-col1 {
+  width: 190px;
+  height: 260px;
+  background-color: #fff;
+}
+div.seckill div.sk-col2 {
+  width: 600px;
+  height: 260px;
+  background-color: #fff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+div.seckill div.sk-col3 {
+  width: 200px;
+  height: 260px;
+  background-color: #fff;
+  position: relative;
+}
+div.seckill div.elevator-list {
+  position: absolute;
+  z-index: 100;
+  width: 58px;
+  height: 420px;
+  font-size: 0.37333rem;
+  left: 50%;
+  margin-left: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flew-start;
+  align-items: center;
+}
+div.seckill div.elevator-list a {
+  display: block;
+  background-color: #ffffff;
+  width: 58px;
+  height: 58px;
+  margin: 0;
+  padding: 0px;
+}
+div.seckill div.elevator-list a span {
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  padding: 11px 15px;
+}
+div.seckill div.elevator-list a ~ a {
+  border-top: 1px solid #eeeeee;
+}
+div.seckill div.elevator-list a:hover {
+  background-color: #c81623;
+  color: #ffffff;
+}
+
+a#toTop {
+  display: none;
+  color: #e1251b;
+}
+a#toTop:hover {
+  color: #ffffff;
+}
+
+div.choice {
+  min-width: 990px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e6e6e6;
+}
+div.choice div.ch-col1 {
+  width: 490px;
+  height: 345px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+div.choice div.ch-col2 {
+  width: 490px;
+  height: 345px;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=jd.css.map */

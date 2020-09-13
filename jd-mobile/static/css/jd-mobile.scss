@@ -1,0 +1,255 @@
+$line:1px solid black;
+$white:#ffffff;
+$red:#f63515;
+html {
+	font-size: 10vw;    //基于iphone 6/7/8为基础
+}
+
+body {
+	font-size: 0.32rem;
+	margin:0;
+	padding:0;
+}
+
+div.tip {
+	font-size: 0.37333rem;
+	width:100%;
+	height: 1.2rem;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	color:$white;
+	background-color:black;
+
+	div {
+		display: flex;
+		flex-direction:row;
+		height:0.8rem;
+		justify-content:flex-start;
+		align-items:center;
+		
+		a {
+			margin:0.2rem;
+			width:0.266666rem;
+			height:0.266666rem;
+			background-image:url(../img/mobile/false.png);
+			background-repeat:no-repeat;
+			background-size:0.266666rem 0.266666rem;
+			background-position:0 0 ;
+		}
+		i.logo-m {
+			margin:0px;
+			padding:0px;
+			width:0.8rem;
+			height:0.8rem;
+			background-image:url(../img/mobile/logo-m.png);
+			background-position:no-repeat;
+			background-size:0.8rem 0.8rem;
+			background-position:0 0 ;
+		}
+	}
+	
+
+	p.open {
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		height: 1.2rem;
+		width:2.13rem;
+		background-color:$red;
+	}
+
+}
+
+//div header
+div.header {
+	width:100%;
+	display: flex;
+	flex-direction:row;
+	height:1.2rem;
+	justify-content: space-between;
+	align-items:center;
+	background-color:#112079;
+	margin:0;
+	padding:0;
+	a.navigation {
+		width:0.42666rem;
+		height:0.42666rem;
+		margin-left:0.42rem;
+		background-image:url(../img/mobile/menu.png);
+		background-repeat:no-repeat;
+		background-size: 0.42666rem 0.42666rem;
+		&:link {
+			outline:none;
+		}
+	}
+
+
+	a.search {
+		text-decoration: none;
+		height:0.8rem;
+		width:7.2rem;
+		color:#ccc;
+		display: flex;
+		flex-direction:row;
+		justify-content: flex-start;
+		align-items:center;
+		border:1px solid #ccc;
+		padding:0 0.32rem;
+		background-color:$white;
+		border-radius: 0.4rem;
+		&:focus {
+			outline:none;
+		}
+		i.search-logo {
+			display: block;
+			width:0.53333rem;
+			height:0.4rem;
+			margin-left:0.106666rem;
+			padding-right: 0.133333rem;
+			background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeCAMAAABpA6zvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAzUExURUdwTOo8Puo7Peo7Pek7Peo7Pe0/Qek7PvE+SP9SUuo7Peo7Peo7Pus8P+o7Peo7Pek7PZSxd20AAAAQdFJOUwBV8eG+hyGkEQbGmWs/rthNA0r+AAAA5klEQVQ4y63T0RaDIAgAUEDRUjP//2u3CI/T1vJhvM3uVBAANGx5xwLgiwSZ3TI6uMYANSyuc7AUs03CUvgHRMTEflcZ76FezDGJTE/wTYNI9whhDePhNxAcDVveQWDJbgK6Y8FPQDBH2WdgPlZmYNQvj5D7tP8Ap4+2s8lQX56g4AK34bGPshJ8gbl/wrXoASOUDanlgvVFB3g2T5sGZ2on9xCp23BJ8tusPVzw7O/zhuxtHSIZDYGRo891WUemjeVZgsu4kmY8ju8Ifb2f/i3WV+/gzq0Zgs0xba0eHCSsj4zLR91f1fAfiWsqzlEAAAAASUVORK5CYII=);
+			background-repeat:no-repeat;
+			background-size:0.5333rem 0.4rem;
+			background-position:0 0 ;
+			border-right:0.026rem solid #ccc;
+		}
+		i.glass {
+			font-size: 0.4rem;
+			padding:0 0.1333rem;
+		}
+	}
+	button.login {
+
+		color:$white;
+		font-size: 0.37rem;
+		border:0;
+		background-color:#112079;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+//swiper
+div.swiper {
+	width:100%;
+	height:3.6933rem;
+	background-image:url(../img/mobile/bg-img.jpg);
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	//轮播样式
+	div.swiper-container {
+		// display: none;
+		width:9.3333rem;
+		border-radius:0.14rem;
+		--swiper-pagination-color:#ffffff;
+		// height:138.5px;
+		// background-color:lightgreen;
+		div.swiper-wrapper {
+			
+			a.slide1 {
+				display:block;
+				width:9.3333rem;
+				height:3.6933rem;
+				// background-color:lightgreen;
+				background-image:url(../img/mobile/wrapper-pic1.jpg);
+				background-repeat:no-repeat;
+				background-size:9.3333rem 3.6933rem;
+			}
+			a.slide2 {
+				display:block;
+				width:9.3333rem;
+				height:3.6933rem;
+				background-image:url(../img/mobile/wrapper-pic2.jpg);
+				background-size:9.3333rem 3.6933rem;
+			}
+			a.slide3 {
+				display:block;
+				width:9.3333rem;
+				height:3.6933rem;
+				background-image:url(../img/mobile/wrapper-pic3.jpg);
+				background-size:9.3333rem 3.6933rem;
+			}
+			a.slide4 {
+				display:block;
+				width:9.3333rem;
+				height:3.6933rem;
+				background-image:url(../img/mobile/wrapper-pic4.jpg);
+				background-size:9.3333rem 3.6933rem;
+			}
+		}
+		.swiper-pagination-bullet {
+		width:0.2666rem;
+		height:0.05333rem;
+		border-radius:0.026666rem;
+		}
+	}
+}
+
+//会场样式
+div.venue {
+	width:10rem;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+
+	a.venue-left {
+		display:block;
+		margin:0;
+		padding:0;
+		width:33.33333%;
+		height:2.6666rem;
+		background-image:url(../img/mobile/venue-left.jpg);
+		background-size:3.3334rem 2.6666rem;
+		background-repeat:no-repeat;
+	}
+	a.venue-main {
+		display:block;
+		margin:0;
+		padding:0;
+		width:33.33333333%;
+		height:2.6666rem;
+		background-image:url(../img/mobile/venue-main.gif);
+		background-size:3.3334rem 2.6666rem;
+		background-repeat:no-repeat;
+	}
+	a.venue-right {
+		display:block;
+		margin:0;
+		padding:0;
+		width:33.6%;   //无缝隙弹性盒子布局中，增大最后一个元素的宽度，使得响应式计算时，更加黏合
+		height:2.6666rem;
+		background-image:url(../img/mobile/venue-right.jpg);
+		background-size:3.4rem 2.6666rem;
+		background-repeat:no-repeat;
+	}
+}
+
+//底部导航栏
+footer {
+	z-index: 28;
+	width:100%;
+	height:50px;
+	border-top:1px solid #ccc;
+	position:fixed;
+	bottom:0px;
+	background-color:$white;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	a {
+		display: block;
+		width:65px;
+		height:50px;
+		img {
+			width:65px;
+			height:50px;
+		}
+	}
+}
+
+
+
+
