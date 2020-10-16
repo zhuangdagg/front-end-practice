@@ -10,3 +10,5 @@ just a practice project to copy write the front-end of other super website.<br>
 三、[wedding-invitation](https://github.com/zhuangdagg/front-end-practice/tree/master/wedding-invitation)<br>
 (1)练习了使用swiper和animate插件为老哥做一个婚礼请帖。<br>
 (2)示例：[婚礼请帖](http://mmpoem.cn/invitation)<br>
+四、[wedding-invitation](https://github.com/zhuangdagg/front-end-practice/tree/master/mini-program)<br>
+(1)一个预约服务的小程序<br>
