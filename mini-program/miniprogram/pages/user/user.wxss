@@ -1,0 +1,49 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.user-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+.user-top {
+  width:100%;
+  background-color:#FFDAB9;
+  box-shadow: 0rpx 20rpx 0rpx rgb(211,211,211);
+}
+.user-top > image {
+  margin:10rpx 20rpx 10rpx 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.user-top > button {
+  margin:0;
+  padding:0;
+  color:rgba(30,144,255,1);
+}
+.user-top + view {
+  margin-top:60rpx;
+}
+
+.user-content {
+  width:100%;
+  color:#2c2c2c;
+  margin: 10rpx 20rpx;
+  padding-bottom:20rpx;
+  border-bottom: 2rpx solid rgba(0,0,0,0.2);
+}
+.user-content > image {
+  width:50rpx;
+  height:50rpx;
+  margin-right: 20rpx;
+}

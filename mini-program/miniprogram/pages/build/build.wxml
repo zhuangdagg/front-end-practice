@@ -1,0 +1,52 @@
+<!--miniprogram/pages/home/build/build.wxml-->
+
+<view class="form">
+  <view class="form-item">
+    <label for="">联系人：</label>
+    <input type="text" value="{{customer}}" bindblur="set_customer" placeholder="姓名"/>
+  </view>
+  <view class="form-item">
+    <label for="">联系电话：</label>
+    <input type="number" value="{{phonenumber}}" bindblur="set_phonenumber" placeholder="手机号"/>
+  </view>
+  <view class="form-item">
+    <label for="">服务形式：</label>
+    <picker mode="selector" range="{{['上门','到店']}}" bindchange="model_selector"><text class="selector">{{model_serve}}</text></picker>
+    <text class="item-end">></text>
+  </view>
+  <view class="form-item" bindtap="set_position">
+    <text>联系地址：</text>
+    <view class="item-fool3">
+      <text class="selector">{{"("+position_name+")"}}</text>
+      <text class="selector">{{position_address}}</text>
+    </view>
+    <text class="item-end">></text>
+  </view>
+  <view class="form-item">
+    <text>门牌号：</text>
+    <input type="text" value="{{complete_address}}" bindblur="set_complete_address" placeholder="详细地址，例1层101室"/>
+  </view>
+  <view class="form-item">
+    <label for="">上门时间：</label>
+    <picker mode="date" start="2020-10-10" end="2020-12-31" bindchange="date_selector">
+      <view class="selector">{{date_choose+"/"}}</view>
+    </picker>
+    <picker mode="time" bindchange="time_selector">
+      <view class="selector">{{time_choose}}</view>
+    </picker>
+    <text class="item-end">></text>
+  </view>
+  <!-- 设备情况 -->
+  <view class="form-item">
+    <text>设备情况：</text>
+    <picker header-text="设备情况" mode="multiSelector" bindchange="equipInfo_selector" value="{{multiIndex}}" range="{{multiEquipArray}}">
+      <view class="selector">{{multiEquipArray[0][multiIndex[0]]+" "+multiEquipArray[1][multiIndex[1]]+" "+multiEquipArray[2][multiIndex[2]]}}</view>
+    </picker>
+    <text class="item-end">></text>
+  </view>
+  <view class="form-item">
+    <label class="item-fool2">描述：</label>
+    <textarea value="{{description}}" cols="30" rows="10" bindblur="description_write" placeholder="为方便更好了解您的情况，能和我们具体讲讲吗？"></textarea>
+  </view>
+<button type="primary" bind:tap="order_submit">提交</button>
+</view>

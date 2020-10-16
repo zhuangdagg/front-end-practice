@@ -1,0 +1,41 @@
+/* miniprogram/pages/home/build/build.wxss */
+page {
+
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form-item {
+  display:flex;
+  position: relative;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
+  margin: 30rpx 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid rgba(0,0,0,0.2);
+}
+
+.item-fool2 {
+  width:100rpx;
+}
+.item-fool3 {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 26rpx;
+}
+.item-end {
+  position: absolute;
+  right:10rpx;
+  color:rgba(0, 0, 0, 0.2);
+}
+
+.selector {
+  color:rgba(30,144,255,1);
+}
+

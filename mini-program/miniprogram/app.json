@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/user/user",
+
+    "pages/order/order",
+    "pages/build/build",
+    "pages/equip/equip"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "廉江市广南维修部",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#d81e06",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/barImg/home.png",
+        "selectedIconPath": "/images/barImg/selected-home.png"
+      },
+      {
+        "pagePath": "pages/equip/equip",
+        "text": "电器",
+        "iconPath": "/images/barImg/equip.png",
+        "selectedIconPath": "/images/barImg/selected-equip.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "/images/barImg/order.png",
+        "selectedIconPath": "/images/barImg/selected-order.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/barImg/account.png",
+        "selectedIconPath": "/images/barImg/selected-account.png"
+      }
+    ]
+  },
+  "permission":{
+    "scope.userLocation": {
+      "desc":"你的位置信息将有助于维修人员更好的找到你！"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

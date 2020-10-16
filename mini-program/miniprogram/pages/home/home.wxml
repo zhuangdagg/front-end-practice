@@ -1,0 +1,16 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class="swiper">
+  <swiper indicator-dots="{{true}}"
+    autoplay="{{true}}">
+    <block wx:for="{{url_show_image}}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="home">
+  <button type="primary" bindtap="serve_build">线上预约<image src="/images/equip/hot.png"></image></button>
+  <button type="primary" bindtap="serve_telphone">电话预约</button>
+  <button type="primary" bind:tap="phonenumber_add">添加手机号</button>
+</view>

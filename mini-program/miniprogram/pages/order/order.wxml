@@ -1,0 +1,19 @@
+<!--miniprogram/pages/order.wxml-->
+<view wx:for="{{order}}" wx:key="No">
+  <view class="order-item" >
+    <view class="order-top">
+      <image src="/images/equip/tv.png"></image>
+      <text>订单号：{{item.No}}</text>
+      <text class="top-condition">{{item.condition}}</text>      
+    </view>
+    <view class="order-content">
+      <text>地址：{{item.position.name}}</text>
+      <text>时间：{{item.date_serve +" / "+ item.time_serve }}</text>
+      <text>服务：{{item.equipInfo.equipName +" "+ item.equipInfo.equipProblem +" "+ item.equipInfo.equipNumber}}</text>
+    </view>
+    <view class="order-buttom">
+      <button id="{{index}}" bind:tap="order_control">{{action_order[item.condition]}}</button>
+    </view>
+
+  </view>
+</view>

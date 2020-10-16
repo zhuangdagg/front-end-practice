@@ -1,0 +1,53 @@
+/* miniprogram/pages/order.wxss */
+page {
+  background-color: #FFDAB9;
+}
+.order-item {
+  background-color: silver;
+  width:96%;
+  margin-left: 2%;
+  margin-bottom: 40rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.order-item image {
+  width:100rpx;
+  height:100rpx;
+}
+
+.order-top {
+  width:100%;
+  background-color: rgba(244,164,96,0.5);
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:center;
+  align-self:flex-start;
+  position: relative;
+}
+.top-condition {
+  position:absolute;
+  right:18rpx;
+  color:rgba(0,0,0,0.2);
+  font-size: 28rpx;
+}
+.order-content {
+  margin-top: 18rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+  align-self:center;
+}
+
+.order-buttom {
+  position: relative;
+  align-self: flex-end;
+}
+
+.order-buttom button {
+  color:rgba(30,144,255,1);
+}

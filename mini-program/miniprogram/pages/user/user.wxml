@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="user-item user-top">
+  <image src="{{userInfo.avatarUrl}}"></image>
+  <button class="" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">{{userInfo.nickName}}</button>
+</view>
+<view class="user-item user-content" bind:tap="send_welcome">
+  <image src="/images/equip/redpack.png"></image>
+  <text>我的红包</text>
+</view>
+<view class="user-item user-content" bind:tap="send_welcome">
+  <image src="/images/equip/position.png"></image>
+  <text>地址管理</text>
+</view>
+<view class="user-item user-content" bind:tap="send_welcome">
+  <image src="/images/equip/zichang.png"></image>
+  <text>资产统计</text>
+</view>
+<view class="user-item user-content" bind:tap="toOrder">
+  <image src="/images/equip/order.png"></image>
+  <text>全部订单</text>
+</view>
+<view class="user-item">
+  <text bind:tap="loginAction">登录</text>
+  <button bindtap="test">test</button>
+</view>

@@ -1,0 +1,28 @@
+/* miniprogram/pages/user/user.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.swiper {
+  position: relative;
+  width: 84%;
+  left:8%;
+}
+
+.home button {
+  margin-top: 60rpx;
+  position: relative;
+  width: 300rpx;
+  box-shadow: 5rpx 5rpx 3rpx rgba(0,100,0,1);
+  color:rgba(30,144,255,1);
+  background-color: #FFDAB9;
+}
+
+button image {
+  left:20rpx;
+  width: 36rpx;
+  height:36rpx;
+}
+
