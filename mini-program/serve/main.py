@@ -11,7 +11,7 @@ cors = CORS(app,supports_credentials=True)
 
 @app.route("/login")
 def login():
-	url = "https://api.weixin.qq.com/sns/jscode2session?appid=wx45cadecb327e4c7f&secret=055898e3126d917dfcebc62f5d21b49c&js_code="
+	url = "https://api.weixin.qq.com/sns/jscode2session?appid=XXXXXXXXx&secret=XXXXXXXXXXXXXX&js_code="
 	url_end = "&grant_type=authorization_code"
 	result = {}
 	getArgs = request.args    #获取询问参数
